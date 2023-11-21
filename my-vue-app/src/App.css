@@ -14,7 +14,7 @@
 
   height: 65vh;
   overflow-y: auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(104, 103, 103, 0.965) 0px 8px 100px 2px, rgba(253, 253, 253, 0.932) 0px 0px 8px 1px;
   /* scrollbar-width: 0px; */
  background-color: white;
  display: flex;
