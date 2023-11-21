@@ -12,6 +12,7 @@ function App() {
   const [loaded, setloaded] = useState(true)
   const [description, showdescription] = useState(true)
   const [loader, setloader] = useState(false)
+  const [buttontext, setbuttontext] = useState(true)
 
 
   const notify = () => toast.error('Please, ask some question first', {
@@ -35,11 +36,8 @@ function App() {
   const handlesetusertext = (e) => {
 
     setText(e.target.value)
-
-
-
-
   }
+
 
   const handleclick = () => {
 
@@ -84,6 +82,7 @@ function App() {
   const startconvo = () => {
     setloaded(false)
     showdescription(false)
+    setbuttontext(false)
 
     const obj = {
       role: 'user',
@@ -117,7 +116,7 @@ function App() {
 
         {
 
-          !loaded ? <img style={{ position: "relative", top: "30%", mixBlendMode: "multiply", borderRadius: "50%" , left:"45%"}} width="120px" height="120px" src="https://media1.tenor.com/images/41ae0f1c86f642160ba5e16b5655e28b/tenor.gif?itemid=12709366" alt="" />
+          !loaded ? <div  className="loadediv"></div>
 
             :
             description ? <div>
@@ -157,7 +156,7 @@ function App() {
 
 
       {
-        !loading ? <button onClick={startconvo} class="button-29" role="button">Start Conversation</button>
+        !loading ? <button disabled ={buttontext ? false : true }  onClick={startconvo} className="button-29" role="button">{     buttontext ? "Start Conversation" : "  Your request is being Processed..."  }  </button>
 
           :
 
@@ -167,7 +166,7 @@ function App() {
             <input onChange={handlesetusertext} value={text} className="textfield" type="text" placeholder="Ask your question here...." />
             {
 
-            loader ? <span class="loader"></span> :
+            loader ? <span className="loader"></span> :
             
             <img style={{ cursor: "pointer" }} onClick={handleclick} width="60px" height="60px" src="https://cdn4.iconfinder.com/data/icons/message-4-flat/512/26_Send-512.png" alt="" />
             }
