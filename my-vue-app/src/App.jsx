@@ -160,7 +160,6 @@ function App() {
 
           :
 
-
           <div style={{ backgroundColor: "white", borderRadius: "15px", paddingRight: "5px", paddingLeft: "7px" }} className="send">
 
             <input onChange={handlesetusertext} value={text} className="textfield" type="text" placeholder="Ask your question here...." />
@@ -173,6 +172,10 @@ function App() {
           </div>
 
       }
+
+
+
+
 
 
 <ToastContainer
