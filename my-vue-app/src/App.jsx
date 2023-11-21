@@ -156,7 +156,7 @@ function App() {
 
 
       {
-        !loading ? <button disabled ={buttontext ? false : true }  onClick={startconvo} className="button-29" role="button">{     buttontext ? "Start Conversation" : "  Your request is being Processed..."  }  </button>
+        !loading ? <button disabled ={buttontext ? false : true }  onClick={startconvo} className="button-29" role="button">{     buttontext ? "Start Conversation" : "Processing..."  }  </button>
 
           :
 
