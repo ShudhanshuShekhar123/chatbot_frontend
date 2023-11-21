@@ -131,13 +131,13 @@ function App() {
                 if (item.role == "assistant") {
                   return <div>
 
-                    <p className="left" key={Math.random()}>{item.content}  </p>
+                    <p className="left" key={Math.random()}> <span style={{color:"rgb(249, 249, 4)", fontSize:"28px", fontWeight:"600"}}>Mentor: </span> {item.content}  </p>
                   </div>
                
 
                 } else if (item.role == "user") {
                   return <div>
-                    <p className="right" key={Math.random()}>{item.content}</p>
+                    <p className="right" key={Math.random()}> <span style={{color:"rgb(249, 249, 4)",  fontSize:"28px", fontWeight:"600"}}>Me: </span>{item.content}</p>
 
                   </div>
 
