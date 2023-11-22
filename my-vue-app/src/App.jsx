@@ -110,6 +110,7 @@ function App() {
   return (
     <div>
       <h1>Mindful Mentor</h1>
+      {/* <img  width="100vw" src="./image.jpg" alt="" /> */}
       <div className='container' style={{ height: description ? "60vh" : "null" }}>
 
 
@@ -120,7 +121,7 @@ function App() {
 
             :
             description ? <div>
-              <img width={"200px"} height={"200px"} src="https://openclipart.org/image/800px/307415" alt="" />
+              <img width={"260px"} height={"260px"} src="https://cdn.dribbble.com/users/316903/screenshots/5004534/happy-chatbot.gif" alt="" />
 
               <h3>A Compassionate chatbot designed to support users facing mental health challenges like depression, anxiety, and sadness. This virtual companion engages in empathetic conversations, providing a safe space for users to explore emotions and develop personalized coping strategies. With 24/7 availability, It combines advanced natural language processing with evidence-based information to empower individuals on their journey to emotional well-being.</h3>
 
@@ -160,14 +161,14 @@ function App() {
 
           :
 
-          <div style={{ backgroundColor: "white", borderRadius: "15px", paddingRight: "5px", paddingLeft: "7px" }} className="send">
+          <div style={{  borderRadius: "15px", paddingRight: "5px", paddingLeft: "7px" }} className="send">
 
             <input onChange={handlesetusertext} value={text} className="textfield" type="text" placeholder="Ask your question here...." />
             {
 
             loader ? <span className="loader"></span> :
             
-            <img style={{ cursor: "pointer" }} onClick={handleclick} width="60px" height="60px" src="https://cdn4.iconfinder.com/data/icons/message-4-flat/512/26_Send-512.png" alt="" />
+            <img style={{ cursor: "pointer" }} onClick={handleclick} width="60px" height="60px" src="https://tse3.mm.bing.net/th?id=OIP.DhLHmIpoRSH1whF7rAfnKQAAAA&pid=Api&P=0&h=180" alt="" />
             }
           </div>
 

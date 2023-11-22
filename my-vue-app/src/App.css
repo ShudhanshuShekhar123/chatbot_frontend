@@ -16,10 +16,11 @@
   overflow-y: auto;
   box-shadow: rgba(104, 103, 103, 0.965) 0px 8px 100px 2px, rgba(253, 253, 253, 0.932) 0px 0px 8px 1px;
   /* scrollbar-width: 0px; */
- background-color: white;
+ /* background:#9f9e9e; */
  display: flex;
  flex-direction: column;
 /* background-color: rgb(245, 22, 22); */
+/* background-image: url("../image.jpg"); */
  
 }
 
@@ -41,6 +42,7 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 4px 0px;
 }
 
 
@@ -57,29 +59,35 @@ h3{
   /* border: 2px solid red; */
   font-size: 24px;
  margin: auto;
+ color: white;
 
 }
+
 
 input{
   outline: none;
   border: 0px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
 }
 
 .left {
   text-align: left;
   /* display: inline-block; */
-  border: 2px solid black;
-  background-color: rgb(88, 86, 242);
+  /* border: 2px solid black; */
+  /* background-color: rgb(88, 86, 242); */
   color: white;
   /* border-radius: 15px 18px 18px 90px; */
   font-size: 20px;
   font-weight: 600;
+  max-width :90%;
   /* width: fit-content; */
   /* margin-left: 90%; 
   */
   border-radius: 15px;
   /* max-width: fit-content; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-left: 15px;
   margin-right: 15px;
   float: left;
@@ -91,20 +99,21 @@ input{
 
   text-align: right;
   /* display: inline-block; */
-  border: 2px solid black;
+  /* border: 20px solid black; */
   /* border-radius: 18px 10px 90px 18px; */
   border-radius: 15px;
   font-size: 20px;
-  background-color: rgb(54, 151, 249);
+  /* background-color: rgb(54, 151, 249); */
   color: white;
   font-weight: 500;
   /* width: fit-content; */
   float: right;
   /* width: 90%; */
   /* margin-right: 50px; */
-  border: 2px solid black;
+  /* border: 3px solid black; */
   padding: 10px 15px;
   /* max-width: fit-content; */
+  max-width:70%;
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -167,7 +176,7 @@ input{
 
 .container::-webkit-scrollbar-thumb {
 
-  background-color: rgb(88, 86, 242);/* Color of the thumb (the moving part) */
+  background-color: rgb(8, 6, 104);/* Color of the thumb (the moving part) */
   border-radius: 10px;
 }
 .container::-webkit-scrollbar-track {
@@ -229,7 +238,7 @@ input{
   width: 68px;
   height: 68px;
   border: 10px solid;
-  border-color: #0f6bdc transparent;
+  border-color: white transparent;
   border-radius: 50%;
   display: inline-block;
 
@@ -246,3 +255,29 @@ margin: auto;
     transform: rotate(360deg);
   }
 } 
+
+/* img{
+  mix-blend-mode: multiply;
+} */
+
+
+
+@media screen and (min-width: 300px)  and (max-width:600px) {
+  
+  h3{
+    font-size: 18px;
+  }
+
+  .left{
+    font-size: 18px;
+  }
+
+  .right{
+    font-size: 18px;
+  }
+
+}
+
+.send img{
+  border-radius: 6px;
+}
