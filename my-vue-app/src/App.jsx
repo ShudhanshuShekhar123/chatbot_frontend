@@ -121,7 +121,7 @@ function App() {
 
             :
             description ? <div>
-              <img width={"260px"} height={"260px"} src="https://cdn.dribbble.com/users/316903/screenshots/5004534/happy-chatbot.gif" alt="" />
+              <img className="logo" width={"260px"} height={"260px"} src="https://cdn.dribbble.com/users/316903/screenshots/5004534/happy-chatbot.gif" alt="" />
 
               <h3>A Compassionate chatbot designed to support users facing mental health challenges like depression, anxiety, and sadness. This virtual companion engages in empathetic conversations, providing a safe space for users to explore emotions and develop personalized coping strategies. With 24/7 availability, It combines advanced natural language processing with evidence-based information to empower individuals on their journey to emotional well-being.</h3>
 
